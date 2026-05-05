@@ -165,3 +165,32 @@ insert new Account(Name = 'Test Account');
 ### Step 5 — Execute `run.apex`
 Right-click inside `run.apex` → select:
 `SFDX: Execute Anonymous Apex with Currently Opened Editor`
+
+---
+
+# LWC - Deploy & View
+
+### Step 1: Make component visible 
+1. After writing html, js, css code open the `.js-meta.xml` file
+2. Make sure it looks like this:
+```
+<isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+```
+### Step 2: Deploy your LWC to Salesforce org
+### Step 3: Open your Salesforce org
+`sf org open`
+### Step 4: Add LWC to a page in org
+```
+1. Go to Salesforce → Setup
+2. Search → App Builder
+3. Click New or Edit an existing page
+4. On left panel → find your component:
+5. Drag & drop it onto the page
+6. Click Save → Activate
+```
+
