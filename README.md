@@ -68,7 +68,7 @@ Check for:
 | Retrieve from Org      | SFDX: Retrieve This Source from Org  | `sf project retrieve start --target-org <alias>` |
 | Set Default Org        | —                                    | `sf config set target-org <alias>`               |
 | Check Current Org      | —                                    | `sf config get target-org`                       |
-| List Orgs              | —                                    | `sf org list`                                    |
+| View Orgs List         | —                                    | `sf org list`                                    |
 | Rename Alias           | —                                    | `sf alias set <newName>=<username>`              |
 | Logout Org             | —                                    | `sf org logout --target-org <alias>`             |
 | Create Apex Class      | SFDX: Create Apex Class              | `sf apex generate class`                         |
