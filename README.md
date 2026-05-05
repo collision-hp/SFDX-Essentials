@@ -59,32 +59,23 @@ Check for:
 
 ### Important Commands:
 
-| Task | Command |
-|------|---------|
-| Create Project | `SFDX: Create Project` |
-| Authorize Org | `SFDX: Authorize an Org` |
-| Deploy to Org | `SFDX: Deploy This Source to Org` |
-| Retrieve from Org | `SFDX: Retrieve This Source from Org` |
-| Open Org | `SFDX: Open Default Org` |
-| Create Apex Class | `SFDX: Create Apex Class` |
-| Create Apex Trigger | `SFDX: Create Apex Trigger` |
-| Create LWC | `SFDX: Create Lightning Web Component` |
-| Execute Anonymous | `SFDX: Execute Anonymous Apex` |
-| Restart Apex Server | `SFDX: Restart Apex Language Server` |
-
----
-
-### Terminal Commands:
-
-| Task | Command |
-|------|---------|
-| List orgs | `sf org list` |
-| Open org | `sf org open --target-org aliasName` |
-| Deploy | `sf project deploy start --target-org aliasName` |
-| Set default org | `sf config set target-org aliasName` |
-| Check current org | `sf config get target-org` |
-| Rename alias | `sf alias set newName=username` |
-| Remove org | `sf org logout --target-org aliasName` |
+| **Task**               | **VS Code Command (SFDX)**           | **Terminal Command (sf CLI)**                    |
+| ---------------------- | ------------------------------------ | ------------------------------------------------ |
+| Create Project         | SFDX: Create Project                 | `sf project generate`                            |
+| Authorize Org          | SFDX: Authorize an Org               | `sf org login web`                               |
+| Open Org               | SFDX: Open Default Org               | `sf org open --target-org <alias>`               |
+| Deploy to Org          | SFDX: Deploy This Source to Org      | `sf project deploy start --target-org <alias>`   |
+| Retrieve from Org      | SFDX: Retrieve This Source from Org  | `sf project retrieve start --target-org <alias>` |
+| Set Default Org        | —                                    | `sf config set target-org <alias>`               |
+| Check Current Org      | —                                    | `sf config get target-org`                       |
+| List Orgs              | —                                    | `sf org list`                                    |
+| Rename Alias           | —                                    | `sf alias set <newName>=<username>`              |
+| Logout Org             | —                                    | `sf org logout --target-org <alias>`             |
+| Create Apex Class      | SFDX: Create Apex Class              | `sf apex generate class`                         |
+| Create Apex Trigger    | SFDX: Create Apex Trigger            | `sf apex generate trigger`                       |
+| Create LWC             | SFDX: Create Lightning Web Component | `sf lightning generate component`                |
+| Execute Anonymous Apex | SFDX: Execute Anonymous Apex         | `sf apex run`                                    |
+| Restart Apex Server    | SFDX: Restart Apex Language Server   | —                                                |
 
 ---
 
