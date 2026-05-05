@@ -21,7 +21,7 @@ DMLops.runDML();
 ```
 ### Step 4 — Execute Anonymous Apex
 Right-click inside `run.apex` → select:
-`SFDX: Execute Anonymous Apex with Editor Contents`
+`SFDX: Execute Anonymous Apex with Currently Opened Editor`
 
 ### ✅ Expected Output (Output tab):
 DEBUG|Inserted: 001xxxxxxxxxxxxxxx
@@ -46,3 +46,22 @@ DMLops.runDML();
 Click **Execute**
 ### Step 6 — Check Logs
 Go to **Logs tab** → double-click the latest log → check **"Debug Only" ✅**
+
+
+# ⚡ Triggers
+
+### Step 1 — Create a Trigger file
+Press `Ctrl + E` → type: `SFDX: Create Apex Trigger`
+### Step 2 — Deploy to Org
+Press `Ctrl + Shift + D`
+```bash
+sf project deploy start --target-org Accenture
+```
+### Step 4 — Create `run.apex`
+```apex
+// Insert a record to fire the trigger
+insert new Account(Name = 'Test Account');
+```
+### Step 5 — Execute `run.apex`
+Right-click inside `run.apex` → select:
+`SFDX: Execute Anonymous Apex with Currently Opened Editor`
