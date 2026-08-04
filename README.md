@@ -151,7 +151,7 @@ Go to **Logs tab** → double-click the latest log → check **"Debug Only" ✅*
 # ⚡ Apex Triggers
 
 ### Step 1 — Create a Trigger file
-Press `Ctrl + E` → type: `SFDX: Create Apex Trigger`
+Press `Ctrl + shift + p` → type: `SFDX: Create Apex Trigger`
 ### Step 2 — Deploy to Org
 Press `Ctrl + Shift + D`
 ```bash
