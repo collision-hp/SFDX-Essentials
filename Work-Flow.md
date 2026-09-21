@@ -7,10 +7,9 @@ It's both PAAS and SAAS
 # Workflow of Salesforce App Building
 
 ### 1. Data Modeling 
-a. Custom Objects
-b. Fields
-c. Relationships - Lookup(48) , Master-Detail(2)
-d. Junction Objects for many to many
-
+```
+a. Custom Objects , Fields , Relationships - Lookup(48) / Master-Detail(2) , Junction Objects for many to many
+b. Setup validation Rules, formula fields, roll-up summary
+```
 ### 2. Security and Access
 a. 
