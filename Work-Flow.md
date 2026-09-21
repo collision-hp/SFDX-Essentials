@@ -5,3 +5,12 @@ It's both PAAS and SAAS
 2. SAAS - Provides software to manage everything online without any installation or maintenance.
 
 # Workflow of Salesforce App Building
+
+### 1. Data Modeling 
+a. Custom Objects
+b. Fields
+c. Relationships - Lookup(48) , Master-Detail(2)
+d. Junction Objects for many to many
+
+### 2. Security and Access
+a. 
