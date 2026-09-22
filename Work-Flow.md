@@ -13,5 +13,15 @@ It's both PAAS and SAAS
 a. Custom Objects , Fields , Relationships - Lookup(48) / Master-Detail(2) , Junction Objects for many to many
 b. Setup validation Rules, formula fields, roll-up summary
 ```
+
 ### 2. Security and Access
+```
+a. Profile /Permission set for object and field level access
+b. OWD (Org-Wide Default) + Sharing Rules
+c. Field level security audit
+```
+
+### 3. Business Logic(Apex)
+```
 a. 
+```
