@@ -23,5 +23,16 @@ c. Field level security audit
 
 ### 3. Business Logic(Apex)
 ```
-a. 
+a. One trigger per object → handler class pattern : The trigger just routes events, the handler decideswhat happens.
+```
+
+### 4. Automation
+```
+a. Record Triggered Flow for declarative logic.
+b. Scheduled/Batch apex for async/bulk processes.
+```
+
+### 5. Frontend (LWC)
+```
+
 ```
